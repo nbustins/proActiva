@@ -1,0 +1,24 @@
+import java.util.List;
+
+public class Client {
+    
+    private final String nom;
+    private final String cognom1;
+    private final String cognom2;
+    private List<String> prefList;
+    
+    ///@pre:
+    ///@post: s'ha creat un client a partir de les dades entrades
+    public Client(String n,String s1, String s2, List<String> p){
+        nom=n;
+        cognom1=s1;
+        cognom2=s2;
+        prefList=p;
+    }
+    
+    ///@pre: ---
+    ///@post: retorna una llista d’strings amb les preferències de l’objecte actual
+    public List<String> obtPreferencies(){
+        return prefList;
+    }
+}
